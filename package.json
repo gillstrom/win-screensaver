@@ -20,13 +20,13 @@
   ],
   "keywords": [
     "pc",
-    "screensaver",
     "screen saver",
+    "screensaver",
     "win",
     "windows"
   ],
   "dependencies": {
-    "nircmd": "^1.0.1"
+    "nircmd": "^1.1.0"
   },
   "devDependencies": {
     "ava": "0.0.4"
