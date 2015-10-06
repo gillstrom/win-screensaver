@@ -20,16 +20,23 @@
   ],
   "keywords": [
     "pc",
-    "screen saver",
+    "saver",
+    "screen",
     "screensaver",
     "win",
     "windows"
   ],
   "dependencies": {
-    "nircmd": "^1.1.0"
+    "nircmd": "^2.0.0",
+    "pinkie-promise": "^1.0.0"
   },
   "devDependencies": {
     "ava": "*",
-    "xo": "^0.9.0"
+    "xo": "*"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
   }
 }

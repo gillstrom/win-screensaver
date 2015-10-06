@@ -13,9 +13,9 @@ $ npm install --save win-screensaver
 ## Usage
 
 ```js
-var winScreensaver = require('win-screensaver');
+const winScreensaver = require('win-screensaver');
 
-winScreensaver(function (err) {
+winScreensaver().then(() => {
 	console.log('Screensaver started');
 });
 ```

@@ -1,17 +1,11 @@
 'use strict';
+var Promise = require('pinkie-promise');
 var nircmd = require('nircmd');
 
-module.exports = function (cb) {
+module.exports = function () {
 	if (process.platform !== 'win32') {
-		throw new Error('Only Windows systems are supported');
+		return Promise.reject(new Error('Only Windows systems are supported'));
 	}
 
-	nircmd('screensaver', function (err) {
-		if (err) {
-			cb(err);
-			return;
-		}
-
-		cb();
-	});
+	return nircmd('screensaver');
 };
