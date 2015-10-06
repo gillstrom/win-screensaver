@@ -1,11 +1,10 @@
-'use strict';
-var test = require('ava');
-var winScreensaver = require('./');
+import test from 'ava';
+import fn from './';
 
-test('screensaver', function (t) {
+test('screensaver', t => {
 	t.plan(1);
 
-	winScreensaver(function (err) {
+	fn(err => {
 		t.assert(!err, err);
 	});
 });
